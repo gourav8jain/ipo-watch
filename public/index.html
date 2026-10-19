@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GMP Watch · IPOs closing today</title>
+  <meta name="description" content="Grey market premium (GMP) for IPOs closing today and the next working day, with 14-day GMP history.">
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1012" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand-row">
+        <div class="brand">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l5-6 4 3 7-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>GMP Watch</span>
+        </div>
+        <button class="icon-btn" id="refresh" aria-label="Reload data">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p class="updated" id="updated"><span class="dot"></span>Loading…</p>
+
+      <nav class="tabs" role="tablist" aria-label="Closing date">
+        <button role="tab" class="tab" data-tab="today" aria-selected="true">Today <b data-count="today">–</b></button>
+        <button role="tab" class="tab" data-tab="next" aria-selected="false"><span data-label="next">Next day</span> <b data-count="next">–</b></button>
+        <button role="tab" class="tab" data-tab="all" aria-selected="false">All <b data-count="all">–</b></button>
+      </nav>
+      <div class="chips" role="group" aria-label="Segment">
+        <button class="chip" data-seg="all" aria-pressed="true">All</button>
+        <button class="chip" data-seg="Mainboard" aria-pressed="false">Mainboard</button>
+        <button class="chip" data-seg="SME" aria-pressed="false">SME</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="notice" class="notice" hidden></div>
+    <h1 class="section-title" id="section-title">Closing today</h1>
+    <section id="list" class="list" aria-live="polite">
+      <div class="skeleton"></div><div class="skeleton"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>GMP (grey market premium) is unofficial, unregulated and changes through the day. Data from
+      <a href="https://ipowatch.in/" target="_blank" rel="noopener">ipowatch.in</a>, refreshed every 2 hours on market days. Not investment advice.</p>
+  </footer>
+
+  <template id="card-tpl">
+    <article class="card">
+      <div class="card-head">
+        <div class="title">
+          <h2 class="name"></h2>
+          <div class="meta"><span class="pill seg"></span><span class="pill status"></span></div>
+        </div>
+        <div class="gmp">
+          <span class="gmp-label">GMP</span>
+          <span class="gmp-val"></span>
+        </div>
+      </div>
+      <div class="gain-row">
+        <span class="gain"></span>
+        <span class="est"></span>
+      </div>
+      <figure class="spark"></figure>
+      <dl class="facts"></dl>
+      <details class="hist">
+        <summary>GMP history <span class="hist-count"></span></summary>
+        <table>
+          <thead><tr><th>Date</th><th>GMP</th><th>Δ</th><th>Gain</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </details>
+      <a class="src" target="_blank" rel="noopener">View on ipowatch.in ↗</a>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+name: WhatsApp 10 AM summary
+
+on:
+  schedule:
+    # 10:00 IST = 04:30 UTC, Monday–Friday (exchange holidays are skipped by the script)
+    - cron: '30 4 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print the message only, do not send'
+        type: boolean
+        default: true
+      force:
+        description: 'Send even on a weekend / exchange holiday'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: whatsapp
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Send summary
+        run: npm run notify
+        env:
+          WHATSAPP_PROVIDER: ${{ vars.WHATSAPP_PROVIDER || 'callmebot' }}
+          WHATSAPP_RECIPIENTS: ${{ secrets.WHATSAPP_RECIPIENTS }}
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          META_PHONE_NUMBER_ID: ${{ secrets.META_PHONE_NUMBER_ID }}
+          META_TEMPLATE: ${{ vars.META_TEMPLATE }}
+          META_TEMPLATE_LANG: ${{ vars.META_TEMPLATE_LANG }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          SEND_WHEN_EMPTY: ${{ vars.SEND_WHEN_EMPTY || 'true' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '' }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '' }}

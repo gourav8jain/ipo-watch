@@ -1,0 +1,10 @@
+{
+  "name": "GMP Watch",
+  "short_name": "GMP Watch",
+  "description": "IPO grey market premium for IPOs closing today and next working day",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f5f3ee",
+  "theme_color": "#15171a",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

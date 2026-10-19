@@ -1,0 +1,1119 @@
+{
+  "generatedAt": "2026-10-19T12:29:02.137Z",
+  "today": "2026-10-19",
+  "nextWorkingDay": "2026-10-21",
+  "holidays": [
+    "2026-01-15",
+    "2026-01-26",
+    "2026-03-03",
+    "2026-03-26",
+    "2026-03-31",
+    "2026-04-03",
+    "2026-04-14",
+    "2026-05-01",
+    "2026-05-28",
+    "2026-06-26",
+    "2026-09-14",
+    "2026-10-02",
+    "2026-10-20",
+    "2026-11-10",
+    "2026-11-24",
+    "2026-12-25"
+  ],
+  "historyDays": 14,
+  "source": "https://ipowatch.in/ipo-grey-market-premium-latest-ipo-gmp/",
+  "errors": [],
+  "ipos": [
+    {
+      "id": "hd-fire-protect",
+      "name": "HD Fire Protect",
+      "url": "https://ipowatch.in/hd-fire-protect-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Closed",
+      "gmp": 70,
+      "trend": "down",
+      "price": 271,
+      "estListing": 341,
+      "estGainPct": 25.83,
+      "dateText": "13-15 Oct",
+      "open": "2026-10-13",
+      "close": "2026-10-15",
+      "listingDate": null,
+      "allotmentDate": null,
+      "details": {
+        "priceBand": "₹258 to ₹271 Per Share",
+        "issueSize": "Approx ₹712.31 Crores",
+        "issueType": "Book build Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 70,
+          "trend": "down",
+          "gainPct": 25.83,
+          "updated": "17:18"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 70,
+          "trend": "down",
+          "gainPct": 25.83,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 80,
+          "trend": "down",
+          "gainPct": 29.52,
+          "updated": "17:15"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 85,
+          "trend": "down",
+          "gainPct": 31.37,
+          "updated": "18:00"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 91,
+          "trend": "up",
+          "gainPct": 33.58,
+          "updated": "17:07"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 86,
+          "trend": "up",
+          "gainPct": 31.73,
+          "updated": "17:28"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 75,
+          "trend": "down",
+          "gainPct": 26.68,
+          "updated": "17:24"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 85,
+          "trend": "up",
+          "gainPct": 31.37,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": 75,
+          "trend": "up",
+          "gainPct": 27.67,
+          "updated": "17:41"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": 75,
+          "trend": "up",
+          "gainPct": 27.67,
+          "updated": "16:00"
+        },
+        {
+          "date": "2026-10-08",
+          "gmp": 55,
+          "trend": "down",
+          "gainPct": 20.29,
+          "updated": "17:09"
+        },
+        {
+          "date": "2026-10-07",
+          "gmp": 60,
+          "trend": "up",
+          "gainPct": 22.14,
+          "updated": "16:20"
+        },
+        {
+          "date": "2026-10-06",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "17:56"
+        }
+      ]
+    },
+    {
+      "id": "vaibhav-vyapaar",
+      "name": "Vaibhav Vyapaar",
+      "url": "https://ipowatch.in/vaibhav-vyapaar-ipo-gmp-grey-market-premium/",
+      "segment": "SME",
+      "status": "Closed",
+      "gmp": 5,
+      "trend": "up",
+      "price": 54,
+      "estListing": 59,
+      "estGainPct": 9.26,
+      "dateText": "13-15 Oct",
+      "open": "2026-10-13",
+      "close": "2026-10-15",
+      "listingDate": "2026-10-21",
+      "allotmentDate": "2026-10-16",
+      "details": {
+        "priceBand": "₹51 to ₹54 Per Share",
+        "issueSize": "Approx ₹42 Crores",
+        "issueType": "Book Building Issue",
+        "listingAt": "NSE SME"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 5,
+          "trend": "up",
+          "gainPct": 9.26,
+          "updated": "17:19"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 5,
+          "trend": "up",
+          "gainPct": 9.26,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 2,
+          "trend": "up",
+          "gainPct": 3.7,
+          "updated": "17:11"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:04"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:19"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:23"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:35"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "11:22"
+        },
+        {
+          "date": "2026-10-08",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "14:02"
+        }
+      ]
+    },
+    {
+      "id": "fusion-cx",
+      "name": "Fusion CX",
+      "url": "https://ipowatch.in/fusion-cx-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Closed",
+      "gmp": 20,
+      "trend": "down",
+      "price": 289,
+      "estListing": 309,
+      "estGainPct": 6.92,
+      "dateText": "14-16 Oct",
+      "open": "2026-10-14",
+      "close": "2026-10-16",
+      "listingDate": "2026-10-22",
+      "allotmentDate": "2026-10-19",
+      "details": {
+        "priceBand": "₹275 to ₹289 Per Share",
+        "issueSize": "Approx ₹702.00 Crores",
+        "issueType": "Book Building Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 20,
+          "trend": "down",
+          "gainPct": 6.92,
+          "updated": "17:17"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 12,
+          "trend": "down",
+          "gainPct": 4.15,
+          "updated": "17:15"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 20,
+          "trend": "down",
+          "gainPct": 6.92,
+          "updated": "18:00"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 34,
+          "trend": "down",
+          "gainPct": 11.76,
+          "updated": "17:07"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 25,
+          "trend": "down",
+          "gainPct": 8.65,
+          "updated": "17:41"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 13,
+          "trend": "down",
+          "gainPct": 4.5,
+          "updated": "17:25"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 25,
+          "trend": "down",
+          "gainPct": 8.65,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": 55,
+          "trend": "up",
+          "gainPct": 19.03,
+          "updated": "17:40"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": 55,
+          "trend": "up",
+          "gainPct": 19.03,
+          "updated": "16:00"
+        }
+      ]
+    },
+    {
+      "id": "ravita-engineering-services",
+      "name": "Ravita Engineering",
+      "url": "https://ipowatch.in/ravita-engineering-services-ipo-gmp-grey-market-premium/",
+      "segment": "SME",
+      "status": "Closed",
+      "gmp": 5,
+      "trend": "down",
+      "price": 112,
+      "estListing": 117,
+      "estGainPct": 4.46,
+      "dateText": "14-16 Oct",
+      "open": "2026-10-14",
+      "close": "2026-10-16",
+      "listingDate": "2026-10-22",
+      "allotmentDate": "2026-10-19",
+      "details": {
+        "priceBand": "₹105 to ₹112 Per Share",
+        "issueSize": "Approx ₹116.05 Crores",
+        "issueType": "Book Building Issue",
+        "listingAt": "NSE SME"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 5,
+          "trend": "down",
+          "gainPct": 4.46,
+          "updated": "17:19"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 2,
+          "trend": "down",
+          "gainPct": 1.79,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 2,
+          "trend": "down",
+          "gainPct": 1.79,
+          "updated": "17:17"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 2,
+          "trend": "down",
+          "gainPct": 1.79,
+          "updated": "18:00"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 2,
+          "trend": "down",
+          "gainPct": 1.79,
+          "updated": "17:05"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 4,
+          "trend": "down",
+          "gainPct": 3.57,
+          "updated": "17:21"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 10,
+          "trend": "up",
+          "gainPct": 8.93,
+          "updated": "17:21"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 10,
+          "trend": "up",
+          "gainPct": 8.93,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": 10,
+          "trend": "up",
+          "gainPct": 8.93,
+          "updated": "17:33"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:06"
+        },
+        {
+          "date": "2026-10-08",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "14:00"
+        }
+      ]
+    },
+    {
+      "id": "bonfiglioli-transmissions",
+      "name": "Bonfiglioli Transmissions",
+      "url": "https://ipowatch.in/bonfiglioli-transmissions-ipo-gmp-today/",
+      "segment": "Mainboard",
+      "status": "Open",
+      "gmp": 130,
+      "trend": "up",
+      "price": 586,
+      "estListing": 716,
+      "estGainPct": 22.18,
+      "dateText": "15-19 Oct",
+      "open": "2026-10-15",
+      "close": "2026-10-19",
+      "listingDate": null,
+      "allotmentDate": null,
+      "details": {
+        "priceBand": "₹558 to ₹586 Per Share",
+        "issueSize": "Approx ₹2,533.7 Crores",
+        "issueType": "Book Building Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 130,
+          "trend": "up",
+          "gainPct": 22.18,
+          "updated": "17:15"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 130,
+          "trend": "up",
+          "gainPct": 22.18,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 125,
+          "trend": "down",
+          "gainPct": 21.33,
+          "updated": "17:13"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 160,
+          "trend": "down",
+          "gainPct": 27.3,
+          "updated": "17:55"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 180,
+          "trend": "up",
+          "gainPct": 30.71,
+          "updated": "17:10"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 155,
+          "trend": "down",
+          "gainPct": 26.45,
+          "updated": "17:30"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 150,
+          "trend": "down",
+          "gainPct": 25.6,
+          "updated": "17:29"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 175,
+          "trend": "up",
+          "gainPct": 0,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": 70,
+          "trend": "up",
+          "gainPct": 0,
+          "updated": "17:39"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": 0,
+          "updated": "20:00"
+        }
+      ]
+    },
+    {
+      "id": "sahajanand-medical-technologies",
+      "name": "Sahajanand Medical",
+      "url": "https://ipowatch.in/sahajanand-medical-technologies-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Open",
+      "gmp": 25,
+      "trend": "down",
+      "price": 344,
+      "estListing": 369,
+      "estGainPct": 7.27,
+      "dateText": "15-19 Oct",
+      "open": "2026-10-15",
+      "close": "2026-10-19",
+      "listingDate": null,
+      "allotmentDate": null,
+      "details": {
+        "priceBand": "₹327 to ₹344 Per Share",
+        "issueSize": "Approx ₹475.5 Crores",
+        "issueType": "Book build Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 25,
+          "trend": "down",
+          "gainPct": 7.27,
+          "updated": "17:17"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 15,
+          "trend": "down",
+          "gainPct": 4.36,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 40,
+          "trend": "down",
+          "gainPct": 11.63,
+          "updated": "17:14"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 45,
+          "trend": "up",
+          "gainPct": 13.08,
+          "updated": "17:55"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 42,
+          "trend": "up",
+          "gainPct": 12.21,
+          "updated": "17:08"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 42,
+          "trend": "down",
+          "gainPct": 12.21,
+          "updated": "17:17"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 46,
+          "trend": "up",
+          "gainPct": 13.37,
+          "updated": "17:27"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 40,
+          "trend": "up",
+          "gainPct": null,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "17:00"
+        }
+      ]
+    },
+    {
+      "id": "shellz-india",
+      "name": "Shellz India",
+      "url": "https://ipowatch.in/shellz-india-ipo-gmp-grey-market-premium/",
+      "segment": "SME",
+      "status": "Open",
+      "gmp": 35,
+      "trend": "flat",
+      "price": 179,
+      "estListing": 214,
+      "estGainPct": 19.55,
+      "dateText": "15-19 Oct",
+      "open": "2026-10-15",
+      "close": "2026-10-19",
+      "listingDate": "2026-10-23",
+      "allotmentDate": "2026-10-21",
+      "details": {
+        "priceBand": "₹170 to ₹179 Per Share",
+        "issueSize": "Approx ₹59.97 Crores",
+        "issueType": "Book Building Issue",
+        "listingAt": "BSE SME"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 35,
+          "trend": "flat",
+          "gainPct": 19.55,
+          "updated": "17:18"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:16"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:02"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:06"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:29"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": null,
+          "trend": "flat",
+          "gainPct": null,
+          "updated": "17:33"
+        }
+      ]
+    },
+    {
+      "id": "tonbo-imaging",
+      "name": "Tonbo Imaging",
+      "url": "https://ipowatch.in/tonbo-imaging-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Open",
+      "gmp": 520,
+      "trend": "up",
+      "price": 700,
+      "estListing": 1220,
+      "estGainPct": 74.28,
+      "dateText": "15-19 Oct",
+      "open": "2026-10-15",
+      "close": "2026-10-19",
+      "listingDate": "2026-10-23",
+      "allotmentDate": "2026-10-21",
+      "details": {
+        "priceBand": "₹665 to ₹700 Per Share",
+        "issueSize": "Approx ₹852.2 Crores",
+        "issueType": "Book Building Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 520,
+          "trend": "up",
+          "gainPct": 74.28,
+          "updated": "17:16"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 525,
+          "trend": "up",
+          "gainPct": 75,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 500,
+          "trend": "up",
+          "gainPct": 71.43,
+          "updated": "17:13"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 500,
+          "trend": "up",
+          "gainPct": 71.43,
+          "updated": "17:05"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 500,
+          "trend": "up",
+          "gainPct": 71.43,
+          "updated": "17:10"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 460,
+          "trend": "up",
+          "gainPct": 65.71,
+          "updated": "17:34"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 375,
+          "trend": "up",
+          "gainPct": 53.57,
+          "updated": "17:28"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 270,
+          "trend": "up",
+          "gainPct": 0,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": null,
+          "trend": null,
+          "gainPct": 0,
+          "updated": "17:40"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": null,
+          "trend": null,
+          "gainPct": 0,
+          "updated": "16:00"
+        }
+      ]
+    },
+    {
+      "id": "zetwerk",
+      "name": "Zetwerk",
+      "url": "https://ipowatch.in/zetwerk-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Open",
+      "gmp": 5,
+      "trend": "down",
+      "price": 151,
+      "estListing": 156,
+      "estGainPct": 3.31,
+      "dateText": "15-19 Oct",
+      "open": "2026-10-15",
+      "close": "2026-10-19",
+      "listingDate": null,
+      "allotmentDate": null,
+      "details": {
+        "priceBand": "₹143 to ₹151 Per Share",
+        "issueSize": "Approx ₹5,012.3 Crores",
+        "issueType": "Book-built Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 5,
+          "trend": "down",
+          "gainPct": 3.31,
+          "updated": "17:16"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 5,
+          "trend": "down",
+          "gainPct": 3.31,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 11,
+          "trend": "down",
+          "gainPct": 7.28,
+          "updated": "17:14"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 15,
+          "trend": "down",
+          "gainPct": 9.93,
+          "updated": "17:55"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 23,
+          "trend": "down",
+          "gainPct": 15.23,
+          "updated": "17:09"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 20,
+          "trend": "down",
+          "gainPct": 13.25,
+          "updated": "17:39"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 13,
+          "trend": "down",
+          "gainPct": 8.61,
+          "updated": "17:26"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 30,
+          "trend": "up",
+          "gainPct": null,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "17:39"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "20:00"
+        },
+        {
+          "date": "2026-10-08",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "10:00"
+        },
+        {
+          "date": "2026-10-07",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "10:00"
+        },
+        {
+          "date": "2026-10-06",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "18:09"
+        }
+      ]
+    },
+    {
+      "id": "jio-platforms",
+      "name": "Jio Platforms",
+      "url": "https://ipowatch.in/jio-platforms-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Upcoming",
+      "gmp": 260,
+      "trend": "up",
+      "price": 1119,
+      "estListing": 1379,
+      "estGainPct": 23.24,
+      "dateText": "21-23 Oct",
+      "open": "2026-10-21",
+      "close": "2026-10-23",
+      "listingDate": null,
+      "allotmentDate": null,
+      "details": {
+        "priceBand": "₹1,065 to ₹1,119 Per Share",
+        "issueSize": "Approx ₹30,213 Crores, 27,00,00,000 Equity Shares",
+        "issueType": "Book Building Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 260,
+          "trend": "up",
+          "gainPct": 23.24,
+          "updated": "17:30"
+        },
+        {
+          "date": "2026-10-18",
+          "gmp": 245,
+          "trend": "up",
+          "gainPct": 21.89,
+          "updated": "15:30"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 220,
+          "trend": "down",
+          "gainPct": 19.66,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 225,
+          "trend": "down",
+          "gainPct": 20.11,
+          "updated": "17:12"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 230,
+          "trend": "up",
+          "gainPct": 20.55,
+          "updated": "17:55"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 200,
+          "trend": "up",
+          "gainPct": 17.87,
+          "updated": "22:00"
+        },
+        {
+          "date": "2026-10-13",
+          "gmp": 211,
+          "trend": "up",
+          "gainPct": 18.86,
+          "updated": "17:32"
+        },
+        {
+          "date": "2026-10-12",
+          "gmp": 182,
+          "trend": "up",
+          "gainPct": 16.26,
+          "updated": "17:30"
+        },
+        {
+          "date": "2026-10-11",
+          "gmp": 170,
+          "trend": "flat",
+          "gainPct": 15.19,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-10",
+          "gmp": 170,
+          "trend": "down",
+          "gainPct": 15.19,
+          "updated": "17:42"
+        },
+        {
+          "date": "2026-10-09",
+          "gmp": 175,
+          "trend": "down",
+          "gainPct": 15.64,
+          "updated": "16:00"
+        },
+        {
+          "date": "2026-10-08",
+          "gmp": 177,
+          "trend": "down",
+          "gainPct": null,
+          "updated": "20:00"
+        },
+        {
+          "date": "2026-10-07",
+          "gmp": 185,
+          "trend": "up",
+          "gainPct": null,
+          "updated": "18:20"
+        },
+        {
+          "date": "2026-10-06",
+          "gmp": 168,
+          "trend": "up",
+          "gainPct": null,
+          "updated": "17:24"
+        }
+      ]
+    },
+    {
+      "id": "paras-healthcare",
+      "name": "Paras Healthcare",
+      "url": "https://ipowatch.in/paras-healthcare-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Upcoming",
+      "gmp": 95,
+      "trend": "down",
+      "price": 693,
+      "estListing": 788,
+      "estGainPct": 13.71,
+      "dateText": "21-23 Oct",
+      "open": "2026-10-21",
+      "close": "2026-10-23",
+      "listingDate": "2026-10-28",
+      "allotmentDate": "2026-10-26",
+      "details": {
+        "priceBand": "₹[.] to ₹[.] Per Share",
+        "issueSize": "Approx ₹1,450 Crores",
+        "issueType": "Book Build Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": 95,
+          "trend": "up",
+          "gainPct": 13.71,
+          "updated": "17:15"
+        },
+        {
+          "date": "2026-10-17",
+          "gmp": 95,
+          "trend": "up",
+          "gainPct": 13.71,
+          "updated": "17:00"
+        },
+        {
+          "date": "2026-10-16",
+          "gmp": 90,
+          "trend": "down",
+          "gainPct": 12.99,
+          "updated": "17:12"
+        },
+        {
+          "date": "2026-10-15",
+          "gmp": 115,
+          "trend": "up",
+          "gainPct": 16.59,
+          "updated": "17:55"
+        },
+        {
+          "date": "2026-10-14",
+          "gmp": 75,
+          "trend": "up",
+          "gainPct": null,
+          "updated": "20:00"
+        }
+      ]
+    },
+    {
+      "id": "bls-polymers",
+      "name": "BLS Polymers",
+      "url": "https://ipowatch.in/bls-polymers-ipo-gmp-grey-market-premium/",
+      "segment": "Mainboard",
+      "status": "Upcoming",
+      "gmp": 0,
+      "trend": "flat",
+      "price": 150,
+      "estListing": 155,
+      "estGainPct": 0,
+      "dateText": "27-29 Oct",
+      "open": "2026-10-27",
+      "close": "2026-10-29",
+      "listingDate": null,
+      "allotmentDate": null,
+      "details": {
+        "priceBand": "₹142 to ₹150 Per Share",
+        "issueSize": "Approx ₹255 Crores",
+        "issueType": "Book built Issue",
+        "listingAt": "BSE, NSE"
+      },
+      "history": [
+        {
+          "date": "2026-10-19",
+          "gmp": null,
+          "trend": null,
+          "gainPct": null,
+          "updated": "17:14"
+        }
+      ]
+    }
+  ]
+}

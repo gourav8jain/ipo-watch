@@ -1,0 +1,59 @@
+name: Scrape & deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every 2 hours, 09:00–21:00 IST (03:30–15:30 UTC), every day
+    - cron: '30 3-15/2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+      - name: Scrape ipowatch.in
+        id: scrape
+        # If the source is down, deploy the last committed snapshot instead of failing the site.
+        continue-on-error: true
+        run: npm run scrape
+
+      - name: Warn on stale data
+        if: steps.scrape.outcome == 'failure'
+        run: echo "::warning::Scrape failed — deploying the committed data snapshot."
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

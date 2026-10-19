@@ -1,0 +1,20 @@
+{
+  "name": "ipo-watch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IPO GMP tracker: IPOs closing today / next working day with 14-day GMP history, scraped from ipowatch.in",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "notify": "node scripts/notify.mjs",
+    "notify:dry": "DRY_RUN=1 node scripts/notify.mjs",
+    "serve": "npx --yes serve public -l 4173",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}
