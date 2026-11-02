@@ -46,7 +46,8 @@
   // ---------- sparkline ----------
   function sparkline(history) {
     const pts = (history || []).filter((h) => h.gmp != null).slice().reverse(); // oldest → newest
-    if (pts.length < 2) return '<div class="empty">Not enough GMP history yet.</div>';
+    if (!pts.length) return '<div class="empty">No grey-market quote yet on ipowatch (shown as ₹-). Daily rows are in the history below.</div>';
+    if (pts.length === 1) pts.push({ ...pts[0], single: true }); // one day: draw a flat line so it still shows
     const W = 300, H = 72, P = 6;
     const vals = pts.map((p) => p.gmp);
     const min = Math.min(...vals), max = Math.max(...vals);
@@ -68,7 +69,7 @@
         <path d="${line}" fill="none" stroke="${color}" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/>
         <circle cx="${lx}" cy="${ly}" r="3.5" fill="${color}" vector-effect="non-scaling-stroke"/>
       </svg>
-      <div class="axis"><span>${fmt(pts[0].date, { day: 'numeric', month: 'short' })}</span><span>low ${inr(min)} · high ${inr(max)}</span><span>${fmt(pts.at(-1).date, { day: 'numeric', month: 'short' })}</span></div>`;
+      <div class="axis"><span>${pts.at(-1).single ? '1 day only' : fmt(pts[0].date, { day: 'numeric', month: 'short' })}</span><span>low ${inr(min)} · high ${inr(max)}</span><span>${fmt(pts.at(-1).date, { day: 'numeric', month: 'short' })}</span></div>`;
   }
 
   // ---------- card ----------
@@ -115,6 +116,7 @@
       return `<tr><td>${esc(fmt(h.date))}${h.updated ? ` <small style="color:var(--ink-3)">${esc(h.updated)}</small>` : ''}</td><td>${esc(inr(h.gmp))}</td><td class="${cls}">${dtxt}</td><td>${h.gainPct == null ? '—' : esc(h.gainPct.toFixed(2) + '%')}</td></tr>`;
     }).join('');
     if (!hist.length) $('.hist', node).remove();
+    else if (hist.filter((h) => h.gmp != null).length <= 2) $(".hist", node).open = true; // short history: show it upfront
 
     const a = $('.src', node);
     if (ipo.url) a.href = ipo.url; else a.remove();
@@ -132,7 +134,7 @@
     return {
       today: list.filter((i) => i.close === state.today).sort(byGain),
       next: list.filter((i) => i.close === state.next).sort(byGain),
-      all: list,
+      all: list.filter((i) => i.close && i.close >= state.today && i.close <= addDays(state.today, 14)),
     };
   }
 
@@ -148,7 +150,7 @@
     const titles = {
       today: `Closing today · ${fmt(state.today)}`,
       next: `Closing next working day · ${fmt(state.next)}`,
-      all: 'All tracked IPOs · by close date',
+      all: `Closing in the next 14 days · till ${fmt(addDays(state.today, 14), { day: 'numeric', month: 'short' })}`,
     };
     $('#section-title').textContent = titles[state.tab];
 
@@ -162,8 +164,8 @@
       const nextClose = upcoming[0]?.close;
       const n = upcoming.filter((i) => i.close === nextClose).length;
       list.classList.remove('grid-2');
-      list.innerHTML = `<div class="empty-state"><strong>No IPOs ${state.tab === 'today' ? 'close today' : 'close on ' + esc(fmt(state.next))}</strong>
-        ${nextClose ? `Next close: ${esc(fmt(nextClose))} · ${n} IPO${n > 1 ? 's' : ''}<br><button type="button" data-goto="all">See all IPOs</button>` : 'Nothing scheduled right now.'}</div>`;
+      list.innerHTML = `<div class="empty-state"><strong>No IPOs ${state.tab === 'today' ? 'close today' : state.tab === 'all' ? 'close in the next 14 days' : 'close on ' + esc(fmt(state.next))}</strong>
+        ${nextClose ? `Next close: ${esc(fmt(nextClose))} · ${n} IPO${n > 1 ? 's' : ''}<br><button type="button" data-goto="all">See next 14 days</button>` : 'Nothing scheduled right now.'}</div>`;
       return;
     }
     const frag = document.createDocumentFragment();

@@ -50,7 +50,8 @@ export function buildMessage(data, today, siteUrl) {
         `   GMP ${inr(ipo.gmp)} ${arrow(ipo.trend)} · ${pct(ipo.estGainPct)}`,
         `   Price ${inr(ipo.price)} → est. ${inr(ipo.estListing)}`,
       );
-      if (trail.length > 1) lines.push(`   ${trail.length}d GMP: ${trail.join(' › ')}`);
+      if (trail.length) lines.push(`   ${trail.length}d GMP: ${trail.join(' › ')}`);
+      else if ((ipo.history || []).length) lines.push('   GMP not quoted yet');
       if (ipo.listingDate) lines.push(`   Lists ${prettyDate(ipo.listingDate)}`);
     });
   }
