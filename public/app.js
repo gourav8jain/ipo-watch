@@ -93,6 +93,21 @@
     if (ipo.estGainPct > 0) gain.classList.add('pos'); else if (ipo.estGainPct < 0) gain.classList.add('neg');
     $('.est', node).innerHTML = `Est. listing <span class="num">${esc(inr(ipo.estListing))}</span> on <span class="num">${esc(inr(ipo.price))}</span>`;
 
+    const sb = ipo.subscription;
+    const subsEl = $('.subs', node);
+    if (sb && sb.total != null) {
+      const xf = (n) => (n == null ? '—' : (n >= 100 ? n.toFixed(0) : n.toFixed(2).replace(/\.?0+$/, '')) + 'x');
+      const bar = (n) => `<div class="subs-bar"><i style="width:${Math.min(100, ((n || 0) / 10) * 100)}%"></i></div>`; // full bar = 10x
+      const cls = sb.total >= 10 ? 'hot' : sb.total < 1 ? 'cold' : '';
+      subsEl.hidden = false;
+      subsEl.innerHTML = `
+        <div class="subs-head"><span class="subs-title">Subscription</span>
+          <span class="subs-total ${cls}">${xf(sb.total)}<small>${sb.updated ? 'at ' + esc(sb.updated) : ''}</small></span></div>
+        <div class="subs-cats">
+          ${[['QIB', sb.qib], ['NII', sb.nii], ['Retail', sb.retail]].map(([k, v]) => `<div class="subs-cat"><span>${k}</span><b>${xf(v)}</b>${bar(v)}</div>`).join('')}
+        </div>`;
+    }
+
     $('.spark', node).innerHTML = sparkline(ipo.history);
 
     const d = ipo.details || {};

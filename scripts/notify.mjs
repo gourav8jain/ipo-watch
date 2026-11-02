@@ -20,6 +20,7 @@ import { scrape } from './scrape.mjs';
 const env = process.env;
 const inr = (n) => (n == null ? '—' : (n < 0 ? '-₹' : '₹') + Math.abs(n).toLocaleString('en-IN'));
 const pct = (n) => (n == null ? '—' : (n > 0 ? '+' : '') + n.toFixed(1) + '%');
+const x = (n) => (n == null ? '—' : n.toFixed(2).replace(/\.?0+$/, '') + 'x');
 const arrow = (t) => (t === 'up' ? '🟢' : t === 'down' ? '🔴' : '🟡');
 
 async function getData() {
@@ -50,6 +51,10 @@ export function buildMessage(data, today, siteUrl) {
         `   GMP ${inr(ipo.gmp)} ${arrow(ipo.trend)} · ${pct(ipo.estGainPct)}`,
         `   Price ${inr(ipo.price)} → est. ${inr(ipo.estListing)}`,
       );
+      if (ipo.subscription?.total != null) {
+        const sb = ipo.subscription;
+        lines.push(`   Subscribed ${x(sb.total)} (QIB ${x(sb.qib)} · NII ${x(sb.nii)} · Retail ${x(sb.retail)})`);
+      }
       if (trail.length) lines.push(`   ${trail.length}d GMP: ${trail.join(' › ')}`);
       else if ((ipo.history || []).length) lines.push('   GMP not quoted yet');
       if (ipo.listingDate) lines.push(`   Lists ${prettyDate(ipo.listingDate)}`);

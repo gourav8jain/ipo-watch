@@ -175,3 +175,17 @@ button { font: inherit; color: inherit; }
   .name { font-size: 19px; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+/* Subscription */
+.subs { background: var(--surface-2); border-radius: 12px; padding: 10px 12px; display: grid; gap: 8px; }
+.subs-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.subs-title { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.subs-total { font: 700 18px var(--mono); }
+.subs-total small { font: 500 11px var(--sans); color: var(--ink-3); margin-left: 6px; }
+.subs-total.hot { color: var(--up); } .subs-total.cold { color: var(--down); }
+.subs-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.subs-cat { min-width: 0; }
+.subs-cat span { display: block; font-size: 11px; color: var(--ink-3); font-weight: 600; }
+.subs-cat b { display: block; font: 600 14px var(--mono); margin: 1px 0 4px; }
+.subs-bar { height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+.subs-bar i { display: block; height: 100%; background: var(--accent); border-radius: 2px; }

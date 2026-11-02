@@ -183,6 +183,41 @@ export function parseDetail(html, today) {
   };
 }
 
+
+const normName = (s) => clean(s).toLowerCase().replace(/\(.*?\)/g, '').replace(/\b(ltd|limited|pvt|private|india|technologies|industries|ipo)\b/g, '').replace(/[^a-z0-9]+/g, '');
+
+/** Subscription page: one table, rows of IPO | Type | Closing Date | QIB | NII | Retail | Total | Updated. */
+export function parseSubscription(html) {
+  const $ = load(html);
+  const rows = [];
+  $('table').each((_, table) => {
+    const headers = $(table).find('tr').first().find('th, td').map((_, c) => clean($(c).text()).toLowerCase()).get();
+    if (!headers.some((h) => h.startsWith('ipo name')) || !headers.some((h) => h.startsWith('total'))) return;
+    const col = (name) => headers.findIndex((h) => h.startsWith(name));
+    const [iName, iDate, iQib, iNii, iRet, iTot, iUpd] = ['ipo name', 'closing', 'qib', 'nii', 'retail', 'total', 'last'].map(col);
+    const num = (td) => { const v = parseFloat(clean(td.text()).replace(/,/g, '')); return Number.isFinite(v) ? v : null; };
+    $(table).find('tr').slice(1).each((_, tr) => {
+      const tds = $(tr).find('td');
+      if (tds.length < 6) return;
+      rows.push({
+        key: normName(tds.eq(iName).text()),
+        close: parseFullDate(clean(tds.eq(iDate).text())),
+        qib: num(tds.eq(iQib)), nii: num(tds.eq(iNii)), retail: num(tds.eq(iRet)), total: num(tds.eq(iTot)),
+        updated: iUpd >= 0 ? clean(tds.eq(iUpd).text()) || null : null,
+      });
+    });
+  });
+  return rows;
+}
+
+export function matchSubscription(ipo, rows) {
+  const k = normName(ipo.name);
+  const hit = rows.find((r) => r.close === ipo.close && (r.key === k || r.key.startsWith(k) || k.startsWith(r.key)) && r.key.length > 2);
+  if (!hit) return null;
+  const { qib, nii, retail, total, updated } = hit;
+  return { qib, nii, retail, total, updated };
+}
+
 async function mapLimit(items, limit, fn) {
   const out = new Array(items.length);
   let i = 0;
@@ -214,6 +249,14 @@ export async function scrape() {
       ipo.history = [];
     }
   });
+
+  // Subscription status (times subscribed) — best effort; never fails the scrape.
+  try {
+    const subRows = parseSubscription(await fetchHtml(config.source.subscriptionUrl));
+    for (const ipo of ipos) ipo.subscription = matchSubscription(ipo, subRows);
+  } catch (err) {
+    errors.push('subscription: ' + err.message);
+  }
 
   ipos.sort((a, b) => (a.close || '9999').localeCompare(b.close || '9999') || a.name.localeCompare(b.name));
 

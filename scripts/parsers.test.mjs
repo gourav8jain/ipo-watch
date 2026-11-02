@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { nextWorkingDay, parseDayMonth, parseFullDate, parseRange } from './lib/dates.mjs';
-import { parseDetail, parseList, parseMoney, parsePct } from './scrape.mjs';
+import { matchSubscription, parseDetail, parseList, parseMoney, parsePct, parseSubscription } from './scrape.mjs';
 import { buildMessage } from './notify.mjs';
 
 test('date ranges from the list page', () => {
@@ -77,4 +77,18 @@ test('whatsapp message', () => {
   assert.match(text, /Tonbo Imaging/);
   assert.match(text, /2d GMP: 500 › 520/);
   assert.match(text, /Jio Platforms \(₹260\)/);
+});
+
+const SUB = `<table><thead><tr><th>IPO Name</th><th>Type</th><th>Closing Date</th><th>QIB (X)</th><th>NII (X)</th><th>Retail (X)</th><th>Total (X)</th><th>Last Updated</th></tr></thead>
+<tbody><tr><td>SFC Environmental</td><td>Mainboard</td><td>October 29, 2026</td><td>18.81</td><td>12.81</td><td>2.71</td><td>9.47</td><td>18:25</td></tr>
+<tr><td>Bombay Coated and Special Steels</td><td>Mainboard</td><td>November 2, 2026</td><td>10.54</td><td>63.90</td><td>17.94</td><td>25.58</td><td>14:11</td></tr></tbody></table>`;
+
+test('subscription parsing and name matching', () => {
+  const rows = parseSubscription(SUB);
+  assert.equal(rows.length, 2);
+  const sfc = matchSubscription({ name: 'SFC Environmental Technologies', close: '2026-10-29' }, rows);
+  assert.equal(sfc.total, 9.47);
+  assert.equal(sfc.retail, 2.71);
+  assert.equal(matchSubscription({ name: 'SFC Environmental Technologies', close: '2026-10-30' }, rows), null);
+  assert.equal(matchSubscription({ name: 'Unknown Co', close: '2026-11-02' }, rows), null);
 });

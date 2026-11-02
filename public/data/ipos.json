@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T07:47:29.346Z",
+  "generatedAt": "2026-11-02T08:50:01.937Z",
   "today": "2026-11-02",
   "nextWorkingDay": "2026-11-03",
   "holidays": [
@@ -138,7 +138,14 @@
           "gainPct": null,
           "updated": "16:57"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 13.8,
+        "nii": 4.81,
+        "retail": 1.08,
+        "total": 5.51,
+        "updated": "17:43"
+      }
     },
     {
       "id": "bls-polymers",
@@ -261,7 +268,14 @@
           "gainPct": 20,
           "updated": "17:00"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 200.25,
+        "nii": 559.2,
+        "retail": 128.36,
+        "total": 241.22,
+        "updated": "18:25"
+      }
     },
     {
       "id": "sfc-environmental-technologies",
@@ -377,7 +391,14 @@
           "gainPct": null,
           "updated": "16:56"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 18.81,
+        "nii": 12.81,
+        "retail": 2.71,
+        "total": 9.47,
+        "updated": "18:25"
+      }
     },
     {
       "id": "wiscon-industries",
@@ -479,7 +500,14 @@
           "gainPct": null,
           "updated": "17:25"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 2.24,
+        "nii": 0.62,
+        "retail": 0.66,
+        "total": 1.17,
+        "updated": "18:25"
+      }
     },
     {
       "id": "ajwa-projects",
@@ -567,7 +595,14 @@
           "gainPct": null,
           "updated": "15:00"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 0,
+        "nii": 0.32,
+        "retail": 1.93,
+        "total": 1.12,
+        "updated": "17:56"
+      }
     },
     {
       "id": "carver-roboweld",
@@ -669,7 +704,14 @@
           "gainPct": null,
           "updated": "17:26"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 26.33,
+        "nii": 40.39,
+        "retail": 19.17,
+        "total": 25.8,
+        "updated": "17:56"
+      }
     },
     {
       "id": "mksons-fine-jewels",
@@ -771,7 +813,14 @@
           "gainPct": null,
           "updated": "17:16"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 1.84,
+        "nii": 14.12,
+        "retail": 3.08,
+        "total": 5.09,
+        "updated": "17:56"
+      }
     },
     {
       "id": "antala-industries",
@@ -859,7 +908,14 @@
           "gainPct": null,
           "updated": "12:19"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 66.72,
+        "nii": 0.18,
+        "retail": 0.29,
+        "total": 1,
+        "updated": "14:11"
+      }
     },
     {
       "id": "bombay-coated-special-steels",
@@ -961,7 +1017,14 @@
           "gainPct": null,
           "updated": "17:16"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 10.54,
+        "nii": 63.9,
+        "retail": 17.94,
+        "total": 25.58,
+        "updated": "14:11"
+      }
     },
     {
       "id": "hgs-india",
@@ -1035,7 +1098,14 @@
           "gainPct": null,
           "updated": "17:10"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 4.88,
+        "nii": 15.98,
+        "retail": 14.4,
+        "total": 12.03,
+        "updated": "14:11"
+      }
     },
     {
       "id": "johnsoncab-electricals",
@@ -1109,7 +1179,14 @@
           "gainPct": null,
           "updated": "17:10"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 0.99,
+        "nii": 2.42,
+        "retail": 1.84,
+        "total": 1.72,
+        "updated": "14:11"
+      }
     },
     {
       "id": "maxwell-engineering-solutions",
@@ -1183,7 +1260,14 @@
           "gainPct": null,
           "updated": "17:11"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 0,
+        "nii": 60.78,
+        "retail": 68.38,
+        "total": 47.29,
+        "updated": "14:11"
+      }
     },
     {
       "id": "vectras-enprocon",
@@ -1257,7 +1341,14 @@
           "gainPct": null,
           "updated": "17:11"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 1.42,
+        "nii": 1.05,
+        "retail": 1.26,
+        "total": 1.26,
+        "updated": "14:11"
+      }
     },
     {
       "id": "vedant-poly-fabs",
@@ -1324,7 +1415,14 @@
           "gainPct": null,
           "updated": "17:15"
         }
-      ]
+      ],
+      "subscription": {
+        "qib": 0,
+        "nii": 0.77,
+        "retail": 0.05,
+        "total": 0.34,
+        "updated": "14:11"
+      }
     }
   ]
 }
